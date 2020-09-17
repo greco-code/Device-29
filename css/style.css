@@ -52,7 +52,7 @@ body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", Arial, sans-serif ;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
@@ -69,6 +69,7 @@ img {
   height: auto;
 }
 
+/*INDEX>HTML*/
 /*Header*/
 .main-header {
   background-color: var(--special-yellow);
@@ -254,6 +255,10 @@ img {
   color: var(--basic-black);
 }
 
+.about-button:active {
+  color: var(--basic-black-active);
+}
+
 /*Contacts*/
 .contacts-heading {
   font-family: "Gilroy", Arial, sans-serif;
@@ -275,6 +280,10 @@ img {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--basic-black);
+}
+
+.contacts-button :active {
+  color: var(--basic-black-active);
 }
 
 /*Footer*/
@@ -304,9 +313,11 @@ img {
   list-style: none;
 }
 
+/*CATALOG.HTML*/
 
 
 
+/**/
 
 
 
