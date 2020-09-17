@@ -31,5 +31,250 @@
   font-style: normal
 }
 
+/*Variables*/
+:root {
+  --basic-black: #000000;
+  --basic-dark: #363636;
+  --basic-white: #FFFFFF;
+  --basic-grey: #464646;
+  --basic-half-grey: #7E7E7E;
+  --basic-grey-light: #E5E5E5;
+  --special-yellow: #F7E296;
+  --special-green: #91C92F;
+  --special-yellow-dark: #F0C52E;
+  --special-yellow-lighten: #F7E296;
+}
+
+/*Global*/
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif ;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Header*/
+.main-header {
+  background-color: var(--special-yellow);
+}
+
+.account-nav-item {
+  color: var(--basic-black);
+}
+
+.header-site-nav {
+  list-style: none;
+}
+
+.header-site-nav-item {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--basic-black);
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.header-site-nav-item:first-child {
+  letter-spacing: 0.1em;
+}
+
+/*Popular products*/
+.popular-products-slogan {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.popular-products-description {
+  letter-spacing: 0.1em;
+}
+
+.button-more {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.popular-products-pagination {
+  list-style: none;
+}
+
+.popular-products-specifications {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+}
+
+.popular-products-specifications-value {
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+}
+
+.popular-products-specifications-description {
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+/*Product's categories*/
+.products-categories-list {
+  list-style: none;
+}
+
+.products-categories-list-item {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+/*Features*/
+.features {
+  background-color: var(--basic-grey-light);
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-list-item {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.features-list-item-heading {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.features-list-description {
+  letter-spacing: 0.1em;
+}
+
+/*Partners*/
+.partners-list-item {
+  list-style: none;
+}
+
+/*About*/
+.about-heading {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.about-description {
+  line-height: 28px;
+}
+
+.delivery-list-item {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.delivery-list-item a {
+  color: var(--basic-black);
+}
+
+.about-button {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+/*Contacts*/
+.contacts-heading {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.contacts-description {
+  line-height: 28px;
+}
+
+.contacts-button {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+/*Footer*/
+.main-footer {
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+}
+
+.footer-site-nav {
+  list-style: none;
+}
+
+.footer-site-nav-item {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.footer-account-nav-item {
+  color: var(--basic-white);
+}
+
+.social {
+  list-style: none;
+}
+
+
+
+
+
+
+
 
 
