@@ -34,6 +34,8 @@
 /*Variables*/
 :root {
   --basic-black: #000000;
+  --basic-black-hover: rgba(54, 54, 54, 0.6);
+  --basic-black-active: rgba(54, 54, 54, 0.3);
   --basic-dark: #363636;
   --basic-white: #FFFFFF;
   --basic-grey: #464646;
@@ -94,6 +96,26 @@ img {
   letter-spacing: 0.1em;
 }
 
+.header-site-nav-item:hover {
+  color: var(--basic-black-hover)
+}
+
+.header-site-nav-item:active {
+  color: var(--basic-black-active);
+}
+
+.header-account-nav-item {
+  color: var(--basic-black);
+}
+
+.header-account-nav-item:hover {
+  color: var(--basic-black-hover)
+}
+
+.header-account-nav-item:active {
+  color: var(--basic-black-active);
+}
+
 /*Popular products*/
 .popular-products-slogan {
   font-family: "Gilroy", Arial, sans-serif;
@@ -114,6 +136,10 @@ img {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--basic-black);
+}
+
+.button-more:active {
+  color: var(--basic-black-active);
 }
 
 .popular-products-pagination {
@@ -150,6 +176,10 @@ img {
   letter-spacing: 0.05em;
 }
 
+.products-categories-list-item:active {
+  color: var(--basic-black-active);
+}
+
 /*Features*/
 .features {
   background-color: var(--basic-grey-light);
@@ -167,6 +197,10 @@ img {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--basic-black);
+}
+
+.features-list-item:active {
+  color: var(--special-yellow);
 }
 
 .features-list-item-heading {
