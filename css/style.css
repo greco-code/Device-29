@@ -106,7 +106,7 @@ img {
   color: var(--basic-black);
 }
 
-.header-site-nav-item {
+.header-site-nav-item-link {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -116,15 +116,15 @@ img {
   text-transform: uppercase;
 }
 
-.header-site-nav-item:first-child {
+.header-site-nav-item-link:first-child {
   letter-spacing: 0.1em;
 }
 
-.header-site-nav-item:hover {
+.header-site-nav-item-link:hover {
   color: var(--basic-black-hover)
 }
 
-.header-site-nav-item:active {
+.header-site-nav-item-lnk:active {
   color: var(--basic-black-active);
 }
 
@@ -194,7 +194,7 @@ img {
 }
 
 
-.features-list-item {
+.features-list-item-link {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -204,7 +204,7 @@ img {
   color: var(--basic-black);
 }
 
-.features-list-item:active {
+.features-list-item-link:active {
   color: var(--special-yellow);
 }
 
