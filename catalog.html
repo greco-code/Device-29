@@ -11,8 +11,8 @@
 </head>
 <body>
 <!--Header-->
-<header class="catalog-header">
-  <nav class="catalog-main-nav">
+<header class="main-header catalog-header">
+  <nav class="header-main-nav">
     <a class="header-logo" href="index.html">
       <img src="img/logo.svg" alt="DEVICE">
     </a>
@@ -21,15 +21,15 @@
     </form>
     <div class="header-account-nav">
       <a class="header-account-nav-item" href="blank.html">Валентин Петухов</a>
-      <a class="header-account-nav-item" href="blank.html">Выйти</a>
+      <a class="header-account-nav-item header-logout" href="blank.html">Выйти</a>
       <a class="header-account-nav-item" href="blank.html">Сравнить</a>
       <a class="header-account-nav-item" href="blank.html">Корзина</a>
     </div>
     <ul class="header-site-nav">
-      <li><a class="header-account-nav-item" href="catalog.html">Каталог товаров</a></li>
-      <li><a class="header-account-nav-item" href="#"></a>Доставка</li>
-      <li><a class="header-account-nav-item" href="#"></a>Гарантия</li>
-      <li><a class="header-account-nav-item" href="#"></a>Контакты</li>
+      <li class="header-site-nav-item"><a class="header-site-nav-item-link" href="catalog.html">Каталог товаров</a></li>
+      <li class="header-site-nav-item"><a class="header-site-nav-item-link" href="#">Доставка</a></li>
+      <li class="header-site-nav-item"><a class="header-site-nav-item-link" href="#">Гарантия</a></li>
+      <li class="header-site-nav-item"><a class="header-site-nav-item-link" href="#">Контакты</a></li>
     </ul>
   </nav>
 </header>
@@ -50,7 +50,7 @@
   <section class="sort-section">
     <h2 class="sort-header">Сортировка:</h2>
     <ul class="sort-list">
-      <li class="sort-list-item"><a class="sort-list-link" href="#"></a>По цене</li>
+      <li class="sort-list-item active"><a class="sort-list-link" href="#"></a>По цене</li>
       <li class="sort-list-item"><a class="sort-list-link" href="#"></a>По типу</li>
       <li class="sort-list-item"><a class="sort-list-link" href="#"></a>По популярности</li>
     </ul>
@@ -93,19 +93,21 @@
       </li>
     </ul>
     <!--    Пагинация-->
-    <a class="pagination-back" href="#">Назад</a>
-    <ul class="pagination">
-      <li class="pagination-page">
-        <a class="pagination-page-link" href="#">1</a>
-      </li>
-      <li class="pagination-page">
-        <a class="pagination-page-link" href="#">2</a>
-      </li>
-      <li class="pagination-page">
-        <a class="pagination-page-link" href="#">3</a>
-      </li>
-    </ul>
-    <a class="pagination-forward" href="#">Вперед</a>
+    <div class="pagination">
+      <a class="pagination-back" href="#">Назад</a>
+      <ul class="pagination-list">
+        <li class="pagination-page">
+          <a class="pagination-page-link active" href="#">1</a>
+        </li>
+        <li class="pagination-page">
+          <a class="pagination-page-link" href="#">2</a>
+        </li>
+        <li class="pagination-page">
+          <a class="pagination-page-link" href="#">3</a>
+        </li>
+      </ul>
+      <a class="pagination-forward" href="#">Вперед</a>
+    </div>
   </section>
 </main>
 <!--Footer-->
