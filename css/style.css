@@ -293,7 +293,11 @@ img {
   text-transform: uppercase;
 }
 
-.footer-site-nav-item:hover {
+.footer-site-nav-item-link {
+  color: var(--basic-white);
+}
+
+.footer-site-nav-item-link:hover {
   color: var(--basic-white-hover);
 }
 
