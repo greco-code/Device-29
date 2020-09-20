@@ -317,12 +317,24 @@ img {
   color: var(--basic-white-active);
 }
 
+/*Logos*/
+.main-header-logo-img:hover,
+.main-footer-logo-img:hover {
+  opacity: 60%;
+}
+
+.main-header-logo-img:active,
+.main-footer-logo-img:active {
+  opacity: 30%;
+}
+
 
 /*CATALOG.HTML*/
 /*Header*/
 .header-logout {
   color: var(--basic-black-active);
 }
+
 
 /*Main*/
 .main-catalog-header {
