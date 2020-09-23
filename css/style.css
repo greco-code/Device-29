@@ -158,6 +158,11 @@ img {
   grid-template-columns: 20fr 5fr 5fr 5fr 5fr;
 }
 
+.header-site-nav-item.contacts {
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
 .header-site-nav-item-link {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
@@ -185,6 +190,11 @@ img {
   grid-column-end: 6;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+.header-account-nav-item.login {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .header-account-nav-item {
