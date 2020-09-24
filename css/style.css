@@ -271,14 +271,14 @@ img {
   letter-spacing: 0.1em;
 }
 
-/*Product's categories*/
-
-.products-categories {
-  display: grid;
-  grid-template-rows: repeat(2, min-content);
-  grid-template-columns: 3fr 2fr 1fr;
+.popular-products-pagination {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
+/*Product's categories*/
 .products-categories-list-item {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
@@ -294,8 +294,15 @@ img {
 /*Features*/
 .features {
   background-color: var(--basic-grey-light);
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: repeat(2, min-content);
 }
 
+.features-list {
+  grid-row-start: 1;
+  grid-row-end: -1;
+}
 
 .features-list-item-link {
   font-family: "Gilroy", Arial, sans-serif;
@@ -325,6 +332,12 @@ img {
 
 /*Partners*/
 
+/*Columns grid*/
+.index-columns {
+  display: grid;
+  grid-template-rows: max-content;
+  grid-template-columns: 1fr 1fr;
+}
 
 /*About*/
 .about-heading {
