@@ -433,6 +433,11 @@ img {
   grid-column-end: 4;
 }
 
+.catalog-footer .footer-account-nav {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
 .footer-account-nav-item {
   color: var(--basic-white-calm-nav);
 }
