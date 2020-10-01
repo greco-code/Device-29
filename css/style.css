@@ -75,7 +75,7 @@ img {
   height: auto;
 }
 
-.hidden {
+.visually-hidden {
   display: none;
 }
 
@@ -134,7 +134,7 @@ img {
 .main-header {
   background-color: var(--special-yellow);
   margin-top: 20px;
-  height: 300px;
+  height: 186px;
 }
 
 .main-header-logo {
@@ -298,6 +298,10 @@ img {
 }
 
 /*Product's categories*/
+.products-categories {
+  margin-top: 116px;
+}
+
 .products-categories-list {
   display: flex;
   flex-direction: row;
@@ -319,6 +323,8 @@ img {
 /*Features*/
 .features {
   background-color: var(--basic-grey-light);
+  margin-top: 185px;
+  height: 288px;
 }
 
 .features-container {
@@ -328,6 +334,10 @@ img {
 }
 
 .features-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 70px 0;
   grid-row-start: 1;
   grid-row-end: -1;
 }
@@ -356,9 +366,15 @@ img {
 
 .features-list-description {
   letter-spacing: 0.1em;
+  line-height: 28px;
 }
 
 /*Partners*/
+.partners {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
 .partners-list {
   display: flex;
   flex-direction: row;
@@ -371,13 +387,21 @@ img {
   display: grid;
   grid-template-rows: max-content;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 86px;
 }
+
+.about-heading,
+.contacts-heading {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 
 /*About*/
 .about {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, max-content);
 }
 
 .about-heading {
@@ -386,10 +410,27 @@ img {
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
+  height: 48px;
 }
 
 .about-description {
   line-height: 28px;
+  margin: 0;
+}
+
+.about-description-first {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.about-description-second {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.delivery-list {
+  margin-bottom: 85px;
+  margin-top: 0;
 }
 
 .delivery-list-item {
@@ -397,6 +438,13 @@ img {
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  height: 22px;
+}
+
+.delivery-list-item:last-child {
+  margin-bottom: 0;
 }
 
 .delivery-list-item a {
@@ -409,9 +457,9 @@ img {
 
 /*Contacts*/
 .contacts {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, max-content);
 }
 
 .contacts-heading {
@@ -420,10 +468,17 @@ img {
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
+  height: 48px;
 }
 
 .contacts-description {
   line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.contacts-map {
+  margin-bottom: 85px;
 }
 
 .contacts-button:active {
