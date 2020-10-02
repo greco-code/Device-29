@@ -213,8 +213,8 @@ img {
   color: var(--basic-black);
 }
 
-.header-account-nav-item:nth-child(2),
-.header-account-nav-item:last-child {
+.header-account-nav-item.compare,
+.header-account-nav-item.cart {
   margin-left: auto;
 }
 
@@ -628,6 +628,7 @@ img {
 /*Header*/
 .header-logout {
   color: var(--basic-black-active);
+  margin-right: auto;
 }
 
 
