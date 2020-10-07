@@ -600,6 +600,10 @@ img {
 
 /*CATALOG.HTML*/
 /*Header*/
+.catalog-header .header-site-nav {
+  padding-bottom: 50px;
+}
+
 /*Main*/
 .main-catalog-header {
   font-family: "Gilroy", Arial, sans-serif;
