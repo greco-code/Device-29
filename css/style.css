@@ -673,11 +673,25 @@ img {
   padding-left: 60px;
   padding-top: 25px;
   padding-bottom: 25px;
+  height: 70px;
   margin: 0;
+  box-sizing: border-box;
+}
+
+.filters-header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  transform: translateY(-25px);
+  height: 70px;
+  width: 50vw;
+  background-color: var(--basic-grey-darker);
+  z-index: -1;
 }
 
 .filters {
   background-color: var(--basic-grey-light);
+  min-height: 1214px;
 }
 
 /*Sort*/
@@ -685,6 +699,7 @@ img {
   display: flex;
   background-color: var(--basic-grey-light);
   padding-left: 72px;
+  height: 70px;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
