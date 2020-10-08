@@ -420,9 +420,7 @@ img {
 
 /*Columns grid*/
 .index-columns {
-  display: grid;
-  grid-template-rows: max-content;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   margin-bottom: 86px;
 }
 
@@ -435,9 +433,9 @@ img {
 
 /*About*/
 .about {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, max-content);
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
 .about-heading {
@@ -485,15 +483,19 @@ img {
   color: var(--basic-black);
 }
 
+.about-button {
+  margin-top: auto;
+}
+
 .about-button:active {
   color: var(--basic-black-active);
 }
 
 /*Contacts*/
 .contacts {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, max-content);
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
 .contacts-heading {
@@ -512,6 +514,10 @@ img {
 
 .contacts-map {
   margin-bottom: 85px;
+}
+
+.contacts-button {
+  margin-top: auto;
 }
 
 .contacts-button:active {
