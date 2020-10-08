@@ -348,13 +348,22 @@ img {
 .features {
   background-color: var(--basic-grey-light);
   margin-top: 185px;
-  height: 288px;
+  min-height: 288px;
 }
 
 .features-container {
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-template-rows: repeat(2, min-content);
+  grid-row-gap: 40px;
+}
+
+.features-list-item {
+  padding-bottom: 40px;
+}
+
+.features-list-item:last-child {
+  padding-bottom: 0;
 }
 
 .features-list {
@@ -386,11 +395,14 @@ img {
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
 .features-list-description {
   letter-spacing: 0.1em;
   line-height: 28px;
+  margin: 0;
 }
 
 /*Partners*/
