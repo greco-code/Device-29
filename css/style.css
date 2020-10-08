@@ -213,15 +213,15 @@ img {
   color: var(--basic-black-active);
 }
 
-.header-site-nav-item.catalog {
+.header-catalog {
   width: 50%;
 }
 
-.header-site-nav-item.delivery {
+.header-delivery {
   margin-right: 38px;
 }
 
-.header-site-nav-item.contacts {
+.header-contacts {
   margin-left: auto;
 }
 
