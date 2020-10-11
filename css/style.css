@@ -198,6 +198,40 @@ img {
 }
 
 /*Footer*/
+Footer
+.footer-login::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  background-image: url("../img/login_gold.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-right: 12px;
+}
+
+.footer-compare::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background-image: url("../img/compare_gold.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-right: 15px;
+}
+
+.footer-cart::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-image: url("../img/cart_gold.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-right: 12px;
+}
+
 
 /*INDEX>HTML*/
 /*Header*/
@@ -600,9 +634,9 @@ img {
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, max-content);
   padding-top: 46px;
 }
 
@@ -612,12 +646,13 @@ img {
 }
 
 .footer-site-nav {
+  grid-column-start: 2;
+  grid-column-end: 3;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
-  min-width: 423px;
 }
 
 .footer-site-nav-item {
@@ -627,6 +662,11 @@ img {
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  padding-right: 36px;
+}
+
+.footer-site-nav-item:last-child {
+  padding-right: 0;
 }
 
 .footer-site-nav-item-link {
@@ -643,19 +683,37 @@ img {
 
 .footer-phone {
   color: var(--basic-white);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 
 }
 
 .footer-account-nav {
-  order: -1;
+  grid-column-start: 2;
+  grid-column-end: 4;
   margin-left: auto;
-  min-width: 325px;
   display: flex;
   justify-content: space-between;
 }
 
+.main-address {
+  margin-left: auto;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+}
+
 .footer-account-nav-item {
   color: var(--basic-white-calm-nav);
+  padding-right: 40px;
+}
+
+.footer-account-nav-item:last-child {
+  padding-right: 0;
 }
 
 .footer-account-nav-item:hover {
@@ -667,14 +725,38 @@ img {
 }
 
 .social {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
   display: flex;
   justify-content: space-between;
-  min-width: 136px;
   margin: 0 auto;
+  padding-top: 67px;
+}
+
+.social-item {
+  padding-right: 20px;
+}
+
+.social-item:last-child {
+  padding-right: 0;
+}
+
+.developer-logo {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-left: auto;
+  padding-top: 67px;
 }
 
 /*Logos*/
 .main-footer-logo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding-top: 13px;
   margin-bottom: 40px;
 }
 
