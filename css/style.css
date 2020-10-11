@@ -51,6 +51,7 @@
   --special-green: #91C92F;
   --special-yellow-dark: #F0C52E;
   --special-yellow-lighten: #F7E296;
+  --gold: #FFC600;
 }
 
 /*Global*/
@@ -232,6 +233,27 @@ Footer
   padding-right: 12px;
 }
 
+/*.social::before {*/
+/*  content: "";*/
+/*  width: 80px;*/
+/*  height: 7px;*/
+/*  display: inline-grid;*/
+/*  background-color: var(--gold);*/
+/*  margin-left: auto;*/
+/*  grid-column-start: 1;*/
+/*  grid-column-end: 2;*/
+/*}*/
+
+.footer-user::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  background-image: url("../img/login_gold.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-right: 12px;
+}
 
 /*INDEX>HTML*/
 /*Header*/
