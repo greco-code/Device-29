@@ -77,7 +77,16 @@ img {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
@@ -195,7 +204,7 @@ img {
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  margin-left: 19px;
+  /*margin-left: 19px;*/
 }
 
 /*Footer*/
@@ -259,15 +268,20 @@ Footer
 /*Header*/
 .main-header {
   background-color: var(--special-yellow);
-  margin-top: 20px;
+  margin-top: 40px;
   min-height: 186px;
 }
 
 .main-header-logo {
+  margin-top: -19px;
+  margin-left: -10px;
   grid-column-start: 1;
   grid-column-end: -1;
 }
 
+.main-header-logo-link {
+  padding: 0 10px 10px 10px;
+}
 
 .header-main-nav {
   display: grid;
@@ -291,10 +305,11 @@ Footer
 .header-site-nav {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 30px;
   grid-column-start: 1;
   grid-column-end: -1;
 }
+
 
 .header-site-nav-item-link {
   font-family: "Gilroy", Arial, sans-serif;
@@ -304,11 +319,17 @@ Footer
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  padding: 20px;
 }
 
-.header-site-nav-item-link:first-child {
-  letter-spacing: 0.1em;
+.header-site-nav-item:first-child .header-site-nav-item-link {
+  padding-left: 0;
 }
+
+.header-site-nav-item:last-child .header-site-nav-item-link {
+  padding-right: 0;
+}
+
 
 .header-site-nav-item-link:hover {
   color: var(--basic-black-hover);
@@ -320,11 +341,23 @@ Footer
 
 .header-account-nav {
   display: flex;
-  margin-top: 30px;
 }
 
 .header-account-nav-item {
   color: var(--basic-black);
+  padding: 20px;
+}
+
+.header-account-nav-item:first-child {
+  padding-left: 0;
+}
+
+.header-account-nav-item:nth-child(2) {
+  padding-left: 0;
+}
+
+.header-account-nav-item:last-child {
+  padding-right: 0;
 }
 
 .header-account-nav-item.user {
@@ -341,8 +374,12 @@ Footer
   width: 50%;
 }
 
-.header-delivery {
-  margin-right: 38px;
+.header-catalog a {
+  padding-right: 14px;
+}
+
+.header-guaranty a {
+  padding-left: 13px;
 }
 
 .header-contacts {
@@ -354,7 +391,6 @@ Footer
 }
 
 .header-account-nav-item.compare {
-  margin-right: 63px;
   margin-left: auto;
 }
 
@@ -782,13 +818,13 @@ Footer
   margin-bottom: 40px;
 }
 
-.main-header-logo-img:hover,
-.main-footer-logo-img:hover {
+.main-header-logo-link:hover,
+.main-footer-logo-link:hover {
   opacity: 60%;
 }
 
-.main-header-logo-img:active,
-.main-footer-logo-img:active {
+.main-header-logo-link:active,
+.main-footer-logo-link:active {
   opacity: 30%;
 }
 
