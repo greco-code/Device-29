@@ -217,7 +217,7 @@ img {
   background-image: url("../img/login_gold.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  padding-right: 12px;
+  padding-right: 13px;
 }
 
 .footer-compare::before {
@@ -228,7 +228,7 @@ img {
   background-image: url("../img/compare_gold.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  padding-right: 15px;
+  padding-right: 14px;
 }
 
 .footer-cart::before {
@@ -239,7 +239,7 @@ img {
   background-image: url("../img/cart_gold.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  padding-right: 12px;
+  padding-right: 13px;
 }
 
 .footer-user::before {
@@ -818,7 +818,7 @@ img {
     height: 7px;
     display: inline-block;
     background-color: var(--gold);
-    bottom: 0;
+    bottom: 20px;
 }
 
 .footer-flex-child {
@@ -843,7 +843,6 @@ img {
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  padding-right: 36px;
 }
 
 .footer-site-nav-item:last-child {
@@ -852,6 +851,7 @@ img {
 
 .footer-site-nav-item-link {
   color: var(--basic-white);
+  padding: 16px;
 }
 
 .footer-site-nav-item-link:hover {
@@ -864,8 +864,9 @@ img {
 
 .footer-phone {
   color: var(--basic-white);
-  grid-column-start: 1;
-  grid-column-end: 2;
+  margin-left: auto;
+  grid-column-start: 3;
+  grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
 
@@ -880,9 +881,10 @@ img {
 }
 
 .main-address {
-  margin-left: auto;
-  grid-column-start: 3;
-  grid-column-end: 4;
+  font-style: normal;
+  margin-right: auto;
+  grid-column-start: 1;
+  grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
 
@@ -890,7 +892,7 @@ img {
 
 .footer-account-nav-item {
   color: var(--basic-white-calm-nav);
-  padding-right: 40px;
+  padding-right: 43px;
 }
 
 .footer-account-nav-item:last-child {
@@ -937,8 +939,10 @@ img {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  padding-top: 13px;
-  margin-bottom: 40px;
+  margin-top: -2px;
+  margin-bottom: 16px;
+  padding: 20px;
+  margin-left: -20px;
 }
 
 .main-header-logo-link:hover,
