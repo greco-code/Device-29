@@ -262,7 +262,7 @@ img {
 }
 
 .main-header-logo {
-  margin-top: -19px;
+  margin-top: -20px;
   margin-left: -10px;
   grid-column-start: 1;
   grid-column-end: -1;
@@ -294,7 +294,7 @@ img {
 .header-site-nav {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 22px;
   grid-column-start: 1;
   grid-column-end: -1;
 }
@@ -335,6 +335,7 @@ img {
 .header-account-nav-item {
   color: var(--basic-black);
   padding: 20px;
+  margin-top: 5px;
 }
 
 .header-account-nav-item:first-child {
@@ -398,7 +399,7 @@ img {
   grid-template-rows:  repeat(4, max-content);
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 60px;
-  grid-column-gap: 40px;
+  /*grid-column-gap: 40px;*/
   padding: 0 60px;
   box-sizing: border-box;
   /*margin-top: -26px;*/
