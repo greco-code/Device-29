@@ -410,7 +410,7 @@ img {
   position: relative;
   margin-bottom: 0;
   margin-top: 50px;
-  padding: 9px 43px;
+  padding: 9px 42px 9px 44px;
   align-self: start;
 }
 
@@ -444,10 +444,11 @@ img {
 
 .popular-products-specifications {
   font-family: "Gilroy", Arial, sans-serif;
-  width: 444px;
-  height: 72px;
-  margin-bottom: 0;
-  margin-top: 49px;
+  /*width: 444px;*/
+  /*height: 72px;*/
+  margin-bottom: -5px;
+  margin-top: 50px;
+  margin-left: -2px;
 }
 
 .popular-products-specifications-value {
@@ -457,7 +458,7 @@ img {
 }
 
 .popular-products-specifications-value-item {
-  padding: 0 56px 0 0;
+  padding: 0 60px 13px 0;
 }
 
 .popular-products-specifications-value-item:last-child {
