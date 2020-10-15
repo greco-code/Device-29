@@ -639,11 +639,11 @@ img {
   display: grid;
   grid-template-columns: 2fr 4fr;
   grid-template-rows: repeat(2, min-content);
-  grid-row-gap: 40px;
+  grid-column-gap: 20px;
   transform: translateY(-80px);
 }
 
-.features-container::after {
+.delivery-content::after {
   position: absolute;
   content: "";
   width: 136px;
@@ -651,15 +651,15 @@ img {
   display: inline-block;
   background-image: url("../img/delivery_man.svg");
   background-repeat: no-repeat;
-  right: 0;
-  top: 52px;
+  right: 2px;
+  top: 51px;
 }
 
 .features-container::before {
   position: absolute;
   content: "";
   left: 277px;
-  bottom: -63px;
+  bottom: -61px;
   width: 7px;
   height: 320px;
   display: inline-block;
@@ -669,22 +669,146 @@ img {
 .features-list {
   position: relative;
   display: flex;
-  align-items: center;
   width: 160px;
   flex-direction: column;
-  justify-content: space-between;
-  margin-top: auto;
+  margin-top: 59px;
   grid-row-start: 1;
   grid-row-end: -1;
 }
 
 .features-list-item {
-  padding: 20px;
+  margin-bottom: 22px;
 }
 
-.features-list-item:first-child {
-  padding-top: 0;
+.features-list-item-link {
+  position: relative;
 }
+
+.features-list-item-delivery {
+  padding: 9px 19px;
+}
+
+.features-list-item-guaranty {
+  padding: 9px 24px;
+}
+
+.features-list-item-credit {
+  padding:9px 38px;
+}
+
+.features-list-item:not(.features-list-current) .features-list-item-link::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 8px;
+  display: inline-block;
+  background-color: var(--special-yellow-dark);
+  z-index: -1;
+  top: 7px;
+}
+
+.features-list-item-delivery:not(.features-list-current) .features-list-item-link::before {
+  left: -16px;
+}
+
+.features-list-item-guaranty:not(.features-list-current) .features-list-item-link::before {
+  left: -24px;
+}
+
+.features-list-item-credit:not(.features-list-current) .features-list-item-link::before {
+  left: -38px;
+}
+
+.features-list-item:not(.features-list-current):hover .features-list-item-link::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 40px;
+  display: inline-block;
+  background-color: var(--special-yellow-dark);
+  z-index: -1;
+  top: -8px;
+}
+
+.features-list-item-delivery:not(.features-list-current):active .features-list-item-link::before {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 40px;
+  display: inline-block;
+  background-color: var(--basic-black);
+  z-index: -1;
+  top: -8px;
+  left: -20px;
+}
+
+.features-list-item-guaranty:not(.features-list-current):active .features-list-item-link::before {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 40px;
+  display: inline-block;
+  background-color: var(--basic-black);
+  z-index: -1;
+  top: -9px;
+  left: -24px;
+}
+
+.features-list-item-credit:not(.features-list-current):active .features-list-item-link::before {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 40px;
+  display: inline-block;
+  background-color: var(--basic-black);
+  z-index: -1;
+  top: -8px;
+  left: -38px;
+}
+
+.features-list-item:not(.features-list-current):active .features-list-item-link,
+.features-list-current .features-list-item-link{
+  color: var(--special-yellow);
+}
+
+
+.features-list-item-delivery.features-list-current .features-list-item-link::before {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 40px;
+  display: inline-block;
+  background-color: var(--basic-black);
+  z-index: -1;
+  top: -8px;
+  left: -20px;
+}
+
+.features-list-item-guaranty.features-list-current .features-list-item-link::before {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 40px;
+  display: inline-block;
+  background-color: var(--basic-black);
+  z-index: -1;
+  top: -9px;
+  left: -24px;
+}
+
+.features-list-item-credit.features-list-current .features-list-item-link::before {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 40px;
+  display: inline-block;
+  background-color: var(--basic-black);
+  z-index: -1;
+  top: -9px;
+  left: -38px;
+}
+
+
 
 .features-list-item:last-child {
   margin-bottom: 0;
@@ -710,8 +834,8 @@ img {
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
-  margin: 0;
-  padding-top: 47px;
+  margin-bottom: 40px;
+  margin-top: 51px;
 }
 
 .features-list-description {
