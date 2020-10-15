@@ -504,7 +504,7 @@ img {
 
 /*Product's categories*/
 .products-categories {
-  margin-top: 116px;
+  margin-top: 119px;
 }
 
 .products-categories-list {
@@ -583,7 +583,7 @@ img {
 /*Features*/
 .features {
   background-color: var(--basic-grey-light);
-  margin-top: 185px;
+  margin-top: 184px;
   min-height: 288px;
 }
 
@@ -800,7 +800,7 @@ img {
 /*Partners*/
 .partners {
   margin-top: 90px;
-  margin-bottom: 90px;
+  margin-bottom: 93px;
 }
 
 .partners-list {
@@ -825,7 +825,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 40px;
-  margin-bottom: 86px;
+  margin-bottom: 79px;
 }
 
 .about-heading,
@@ -873,7 +873,7 @@ img {
 
 .about-description-second {
   margin-top: 0;
-  margin-bottom: 60px;
+  margin-bottom: 59px;
 }
 
 .delivery-list {
@@ -887,7 +887,7 @@ img {
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   margin-top: 0;
   padding-left: 16px;
   list-style-image: url("../img/list-style-image.svg");
@@ -906,7 +906,7 @@ img {
   align-self: flex-start;
   padding: 7px 22px;
   margin-left: 2px;
-  margin-top: 1px;
+  margin-top: 0;
 }
 .about-button::before {
   position: absolute;
@@ -1015,6 +1015,7 @@ img {
   background-color: var(--basic-dark);
   color: var(--basic-white);
   min-height: 324px;
+  overflow: hidden;
 }
 
 .footer-container {
@@ -1032,7 +1033,7 @@ img {
   height: 7px;
   display: inline-block;
   background-color: var(--gold);
-  bottom: 20px;
+  bottom: 38px;
 }
 
 .footer-site-nav {
@@ -1178,7 +1179,7 @@ img {
   grid-row-end: 4;
   display: flex;
   justify-content: space-between;
-  margin: 67px auto 0;
+  margin: 66px auto 0;
 }
 
 .social-item {
@@ -1209,7 +1210,8 @@ img {
   grid-column-start: 3;
   grid-column-end: 4;
   margin-left: auto;
-  margin-top: 67px;
+  margin-top: 45px;
+  margin-right: -20px;
   padding: 20px;
 }
 
