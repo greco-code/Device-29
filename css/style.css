@@ -901,9 +901,36 @@ img {
 }
 
 .about-button {
-  margin-top: auto;
+  position: relative;
+  align-self: flex-start;
   padding: 7px 22px;
+  margin-left: 2px;
+  margin-top: 1px;
 }
+.about-button::before {
+  position: absolute;
+  content: "";
+  width: 260px;
+  height: 8px;
+  display: inline-block;
+  background-color: var(--special-yellow-dark);
+  z-index: -1;
+  top: 14px;
+  left: -2px;
+}
+
+.about-button:hover::before {
+  position: absolute;
+  content: "";
+  width: 260px;
+  height: 40px;
+  display: inline-block;
+  background-color: var(--special-yellow-dark);
+  z-index: -1;
+  top: -3px;
+  left: 0;
+}
+
 
 .about-button:active {
   color: var(--basic-black-active);
@@ -942,13 +969,41 @@ img {
 }
 
 .contacts-map {
-  margin-bottom: 77px;
+  margin-bottom: 78px;
 }
 
 .contacts-button {
+  position: relative;
+  align-self: flex-start;
   margin-top: 0;
   padding: 7px 40px;
 }
+
+.contacts-button::before {
+  position: absolute;
+  content: "";
+  width: 260px;
+  height: 8px;
+  display: inline-block;
+  background-color: var(--special-yellow-dark);
+  z-index: -1;
+  top: 14px;
+  left: 0;
+}
+
+.contacts-button:hover::before {
+  position: absolute;
+  content: "";
+  width: 260px;
+  height: 40px;
+  display: inline-block;
+  background-color: var(--special-yellow-dark);
+  z-index: -1;
+  top: -3px;
+  left: 0;
+}
+
+
 
 .contacts-button:active {
   color: var(--basic-black-active);
