@@ -733,6 +733,18 @@ img {
   transform: translateY(-80px);
 }
 
+.delivery-content {
+  display: block;
+}
+
+.guaranty-content {
+  display: none;
+}
+
+.credit-content {
+  display: none;
+}
+
 .delivery-content::after {
   position: absolute;
   content: "";
@@ -743,6 +755,30 @@ img {
   background-repeat: no-repeat;
   right: 2px;
   top: 51px;
+}
+
+.guaranty-content::after {
+  position: absolute;
+  content: "";
+  width: 171px;
+  height: 195px;
+  display: inline-block;
+  background-image: url("../img/guaranty_1.svg");
+  background-repeat: no-repeat;
+  right: -16px;
+  top: 33px;
+}
+
+.credit-content::after {
+  position: absolute;
+  content: "";
+  width: 156px;
+  height: 188px;
+  display: inline-block;
+  background-image: url("../img/credit_1.svg");
+  background-repeat: no-repeat;
+  right: 8px;
+  top: 28px;
 }
 
 .features-container::before {
