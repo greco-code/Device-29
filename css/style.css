@@ -102,7 +102,7 @@ img {
 .sort-list,
 .goods-list,
 .pagination-list,
-.header-products-categories{
+.header-products-categories {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -180,7 +180,6 @@ img {
   background-position: 0 0;
   padding-right: 24px;
 }
-
 
 
 .header-search-input {
@@ -388,15 +387,37 @@ img {
 
 /*Popular products*/
 .popular-products {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 40px;
-  padding: 0 60px;
+  padding: 0 60px 0 0;
   box-sizing: border-box;
   margin-top: -129px;
 }
 
-.popular-products-content::after {
+.monopod-popular-product,
+.fitness-popular-product,
+.quadcopter-popular-product {
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+}
+
+.monopod-popular-product .popular-products-content,
+.fitness-popular-product .popular-products-content {
+  margin-left: 30px;
+}
+
+.monopod-popular-product {
+  display: none;
+}
+
+.fitness-popular-product {
+  display: none;
+}
+
+.quadcopter-popular-product {
+  display: grid;
+}
+
+.monopod-popular-product::after {
   position: absolute;
   content: "01";
   font-weight: 800;
@@ -407,6 +428,44 @@ img {
   color: var(--basic-white);
   right: -12px;
   top: -16px;
+  z-index: -1;
+}
+
+.fitness-popular-product::after {
+  position: absolute;
+  content: "02";
+  font-weight: 800;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 179px;
+  line-height: 219px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  right: -6px;
+  top: -17px;
+  z-index: -1;
+}
+
+.quadcopter-popular-product::after {
+  position: absolute;
+  content: "03";
+  font-weight: 800;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 179px;
+  line-height: 219px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  right: -7px;
+  top: -17px;
+  /*z-index: -1;*/
+}
+
+.quadcopter-popular-product .popular-products-content {
+  margin-top: 93px;
+  margin-left: 30px;
+}
+
+.quadcopter-popular-product .popular-products-specifications-value-item {
+  padding: 0 78px 13px 0;
 }
 
 .popular-products-content::before {
@@ -419,11 +478,28 @@ img {
   top: 34px;
 }
 
+.quadcopter-popular-product .popular-products-content::before {
+  top: -59px;
+}
+
 .popular-products-img {
-  margin-left: 29px;
-  margin-top: auto;
   grid-row-start: 1;
   grid-row-end: -1;
+}
+
+.monopod-popular-product .popular-products-img {
+  margin-left: 89px;
+  margin-top: auto;
+}
+
+.fitness-popular-product .popular-products-img {
+  margin-left: 116px;
+  margin-top: 26px;
+}
+
+.quadcopter-popular-product .popular-products-img {
+  margin-left: 30px;
+  margin-top: 82px;
 }
 
 .popular-products-content {
@@ -439,6 +515,7 @@ img {
   line-height: 58px;
   margin-top: auto;
   margin-bottom: 0;
+  z-index: 1;
 }
 
 .popular-products-description {
@@ -486,11 +563,14 @@ img {
 
 .popular-products-specifications {
   font-family: "Gilroy", Arial, sans-serif;
-  /*width: 444px;*/
-  /*height: 72px;*/
   margin-bottom: -5px;
   margin-top: 50px;
   margin-left: -2px;
+}
+
+.fitness-popular-product .popular-products-specifications {
+  margin-bottom: 18px;
+  margin-top: 50px;
 }
 
 .popular-products-specifications-value {
@@ -688,7 +768,7 @@ img {
 }
 
 .features-list-item-credit {
-  padding:9px 38px;
+  padding: 9px 38px;
 }
 
 .features-list-item:not(.features-list-current) .features-list-item-link::before {
@@ -762,7 +842,7 @@ img {
 }
 
 .features-list-item:not(.features-list-current):active .features-list-item-link,
-.features-list-current .features-list-item-link{
+.features-list-current .features-list-item-link {
   color: var(--special-yellow);
 }
 
@@ -802,7 +882,6 @@ img {
   top: -9px;
   left: -38px;
 }
-
 
 
 .features-list-item:last-child {
@@ -950,6 +1029,7 @@ img {
   margin-left: 2px;
   margin-top: 0;
 }
+
 .about-button::before {
   position: absolute;
   content: "";
@@ -1045,7 +1125,6 @@ img {
   top: -3px;
   left: 0;
 }
-
 
 
 .contacts-button:active {
