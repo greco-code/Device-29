@@ -1281,7 +1281,12 @@ img {
   background-image: url("../img/login_gold.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  padding-right: 12px;
+  padding-right: 14px;
+  color: var(--special-yellow);
+}
+
+.catalog-footer .footer-user {
+  margin-right: 2px;
 }
 
 .footer-phone {
