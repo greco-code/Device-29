@@ -11,7 +11,8 @@
 </head>
 <body>
 <!--Header-->
-<header class="main-header catalog-header container">
+<header class="main-header catalog-header  container">
+  <h2 class="visually-hidden">Главное меню</h2>
   <nav class="header-main-nav">
     <div class="main-header-logo">
       <a class="main-header-logo-link" href="index.html">
@@ -23,7 +24,7 @@
       </a>
     </div>
     <div class="header-account-nav">
-      <form class="header-search">
+      <form class="header-account-nav-item header-search">
         <label>
           <input class="header-search-input" type="search" placeholder="Поиск по сайту" name="search">
         </label>
@@ -34,11 +35,29 @@
       <a class="header-account-nav-item cart" href="blank.html">Корзина</a>
     </div>
     <ul class="header-site-nav">
-      <li class="header-site-nav-item header-catalog"><a class="header-site-nav-item-link" href="catalog.html">Каталог
-        товаров</a></li>
+      <li class="header-site-nav-item header-catalog">
+        <a class="header-site-nav-item-link header-site-nav-catalog-link" href="catalog.html">Каталог товаров</a>
+        <ul class="header-products-categories">
+          <li class="header-products-categories-item"><a class="header-products-categories-item-link" href="#">Виртуальная
+            реальность</a></li>
+          <li class="header-products-categories-item"><a class="header-products-categories-item-link" href="#">Моноподы
+            для
+            селфи</a></li>
+          <li class="header-products-categories-item"><a class="header-products-categories-item-link"
+                                                         href="#">Экшн-камеры</a></li>
+          <li class="header-products-categories-item"><a class="header-products-categories-item-link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="header-products-categories-item"><a class="header-products-categories-item-link" href="#">Умные
+            часы</a></li>
+          <li class="header-products-categories-item"><a class="header-products-categories-item-link"
+                                                         href="#">Квадрокоптер</a></li>
+        </ul>
+      </li>
       <li class="header-site-nav-item header-delivery"><a class="header-site-nav-item-link" href="#">Доставка</a></li>
       <li class="header-site-nav-item header-guaranty"><a class="header-site-nav-item-link" href="#">Гарантия</a></li>
-      <li class="header-site-nav-item header-contacts"><a class="header-site-nav-item-link" href="#">Контакты</a></li>
+      <li class="header-site-nav-item header-contacts">
+        <a class="header-site-nav-item-link" href="#">Контакты</a>
+      </li>
     </ul>
   </nav>
 </header>
@@ -46,7 +65,7 @@
 <!--Main-->
 <main>
   <div class="catalog-container container">
-    <h1 class="main-catalog-header">Моноподы для селфи</h1>
+    <h1 class="main-catalog-heading">Моноподы для селфи</h1>
     <ul class="catalog-site-nav">
       <li class="catalog-site-nav-item"><a class="catalog-site-nav-link" href="index.html">Главная</a></li>
       <li class="catalog-site-nav-item"><a class="catalog-site-nav-link" href="blank.html">Каталог товаров</a></li>

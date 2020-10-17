@@ -144,6 +144,9 @@ img {
 .main-header {
   background-color: var(--special-yellow);
   margin-top: 40px;
+}
+
+.index-header {
   min-height: 300px;
 }
 
@@ -293,14 +296,7 @@ img {
 }
 
 
-.header-account-nav-item.logout {
-  margin-right: auto;
-  margin-left: 20px;
-  color: var(--basic-black-active);
-}
-
 .header-catalog {
-  /*position: relative;*/
   width: 50%;
 }
 
@@ -1419,12 +1415,53 @@ img {
 
 /*CATALOG.HTML*/
 /*Header*/
+.catalog-header {
+  min-height: 186px;
+}
+
 .catalog-header .header-site-nav {
-  padding-bottom: 50px;
+  margin-top: 33px;
+}
+
+.catalog-header .header-search {
+  margin-left: -9px;
+}
+
+.catalog-header .user {
+  margin-left: 2px;
+}
+
+.user::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  background-image: url("../img/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-right: 12px;
+}
+
+.header-account-nav-item.logout {
+  margin-left: 1px;
+  color: var(--basic-black-active);
+}
+
+.catalog-header .header-account-nav-item {
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.catalog-header .header-account-nav-item.compare {
+  margin-right: 22px;
+}
+
+.catalog-header .header-account-nav-item.cart {
+  margin-right: -9px;
 }
 
 /*Main*/
-.main-catalog-header {
+.main-catalog-heading {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 47px;
@@ -1448,7 +1485,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
-  padding-left: 60px;
+  margin-left: 60px;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -1459,21 +1496,21 @@ img {
   margin-right: 40px;
 }
 
-.user::before {
-  content: "";
-  width: 9px;
-  height: 9px;
-  display: inline-block;
-  background-image: url("../img/login.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  padding-right: 12px;
+.catalog-site-nav-item:first-child {
+  margin-left: -10px;
 }
+
+.catalog-site-nav-item:not(.catalog-site-nav-item:last-child)::before {
+  content: "";
+
+}
+
 
 .catalog-site-nav-link {
   color: var(--basic-black-active);
   font-size: 14px;
   line-height: 19px;
+  padding: 10px;
 }
 
 .catalog-site-nav-link:hover {
