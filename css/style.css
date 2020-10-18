@@ -314,7 +314,7 @@ img {
 }
 
 .header-site-nav-catalog-link:hover + .header-products-categories,
-.header-products-categories:hover{
+.header-products-categories:hover {
   display: grid;
 }
 
@@ -401,9 +401,18 @@ img {
 
 /*Popular products*/
 .popular-products {
+  position: relative;
   padding: 0 60px 0 0;
   box-sizing: border-box;
   margin-top: -129px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-current {
+  display: grid;
 }
 
 .monopod-popular-product,
@@ -419,17 +428,8 @@ img {
   margin-left: 30px;
 }
 
-.monopod-popular-product {
-  display: grid;
-}
-
 .fitness-popular-product {
-  display: none;
   margin-bottom: -21px;
-}
-
-.quadcopter-popular-product {
-  display: none;
 }
 
 .monopod-popular-product::after {
@@ -629,6 +629,15 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
+
+.crumb-current {
+  box-shadow:
+    inset 0 0 0 2px var(--basic-white),
+    inset 0 0 0 3px var(--basic-black),
+    inset 0 0 0 4px var(--basic-white);
+}
+
+
 
 .popular-products-pagination {
   grid-row-start: 3;
@@ -1761,7 +1770,7 @@ img {
 }
 
 .goods-list-link-pic:hover ~ .product-links,
-.product-links:hover{
+.product-links:hover {
   display: flex;
 }
 
