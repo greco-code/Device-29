@@ -301,7 +301,7 @@ img {
   width: 50%;
 }
 
-.header-catalog::after {
+.header-site-nav-catalog-link::after {
   content: "";
   width: 15px;
   height: 15px;
@@ -310,6 +310,7 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 30%;
+  padding-left: 37px;
 }
 
 .header-site-nav-catalog-link:hover + .header-products-categories,
