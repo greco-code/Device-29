@@ -1663,11 +1663,19 @@ img {
   font-size: 14px;
   line-height: 19px;
   font-weight: 400;
-  padding-right: 30px;
+  margin-right: 10px;
+}
+
+.sort-list-link {
+  padding: 10px;
+}
+
+.sort-list-item:first-child {
+  margin-left: -20px;
 }
 
 .sort-list-item:last-child {
-  padding-right: 0;
+
 }
 
 .sort-list-item:hover {
