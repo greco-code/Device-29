@@ -1748,15 +1748,15 @@ img {
   display: grid;
   grid-template-rows: repeat(2, max-content);
   grid-template-columns: repeat(2, max-content);
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .goods-list-item:nth-child(2n) {
-  padding-left: 40px;
+  margin-left: 40px;
 }
 
 .goods-list-item:nth-last-child(-n+2) {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .goods-list-link {
@@ -1859,6 +1859,28 @@ img {
 
 .addcompare:active {
   opacity: 0.2;
+}
+
+.new {
+  position: relative;
+}
+
+.new::after {
+  position: absolute;
+  content: "new";
+  font-family: "Gilroy", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 15px;
+  font-size: 12px;
+  color: var(--basic-black);
+  opacity: 0.3;
+  border: 2px solid var(--basic-black);
+  border-radius: 50%;
+  padding: 21px 16px 22px 15px;
+  margin-right: auto;
+  top: 29px;
+  right: 27px;
 }
 
 /*Pagination*/
