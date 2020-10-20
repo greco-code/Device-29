@@ -170,15 +170,58 @@ img {
   padding: 0 60px;
 }
 
-.header-search {
-  width: 50%;
+.header-account-nav-item.header-search {
+  width: 540px;
+  padding: 0;
+}
+
+.header-form {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+  margin-top: 15px;
+}
+
+.header-search-label {
+  position: absolute;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 16px;
+  width: 16px;
+  top: 9px;
+}
+
+.header-search-label::before {
+  content: "";
+  position: absolute;
+  display: none;
+  height: 2px;
+  width: 360px;
+  background-color: var(--basic-black);
+  top: 29px;
 }
 
 .header-search-input {
-  border: 0;
-  background-color: transparent;
+  position: relative;
+  color: var(--basic-black);
   opacity: 0.3;
+  width: 320px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-left: 37px;
 }
+
+.header-search-input:focus ~ .header-search-label::before,
+.header-search-input:focus ~ .header-search-button{
+  display: block;
+}
+
+
+
 
 .header-search-input:hover {
   border: 0;
@@ -186,17 +229,13 @@ img {
   outline: none;
 }
 
-.header-search-input:focus ~ .header-search-button {
-  display: inline;
-}
-
 .header-search-input:focus {
   opacity: 1;
   outline: none;
-  border-bottom: 2px solid var(--basic-black)
 }
 
 .header-search-button {
+  position: absolute;
   display: none;
   color: var(--basic-black);
   font-weight: 300;
@@ -204,35 +243,22 @@ img {
   line-height: 20px;
   text-transform: uppercase;
   background-color: transparent;
-  padding: 15px 17px;
+  padding: 13px 16px;
   border: 2px solid var(--basic-black);
   box-shadow: none;
+  top: -10px;
+  right: 0;
 }
+
 
 .header-search-button:hover {
   background-color: var(--basic-black);
-  color: var(--basic-white)
+  color: var(--basic-white);
 }
 
 .header-search-button:active {
   background-color: var(--basic-black);
   color: var(--basic-white-active);
-}
-
-.header-search::before {
-  content: "";
-  width: 13px;
-  height: 13px;
-  display: inline-block;
-  background-image: url("../img/search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  padding-right: 24px;
-}
-
-
-.header-search-input {
-  padding: 0;
 }
 
 .account-nav-item {
@@ -327,10 +353,6 @@ img {
   color: var(--basic-black);
   padding: 20px;
   margin-top: 5px;
-}
-
-.header-account-nav-item:first-child {
-  padding-left: 0;
 }
 
 .header-account-nav-item:nth-child(2) {
@@ -488,7 +510,6 @@ img {
   color: var(--basic-white);
   right: -12px;
   top: -16px;
-  z-index: -1;
 }
 
 .fitness-popular-product::after {
