@@ -627,7 +627,7 @@ img {
 .button-more::before {
   position: absolute;
   content: "";
-  width: 220px;
+  width: 100%;
   height: 8px;
   display: inline-block;
   background-color: var(--special-yellow-dark);
@@ -910,7 +910,7 @@ img {
 .features-list-item:not(.features-list-current) .features-list-item-link::before {
   position: absolute;
   content: "";
-  width: 160px;
+  width: 100px;
   height: 8px;
   display: inline-block;
   background-color: var(--special-yellow-dark);
@@ -1169,7 +1169,7 @@ img {
 .about-button::before {
   position: absolute;
   content: "";
-  width: 260px;
+  width: 100%;
   height: 8px;
   display: inline-block;
   background-color: var(--special-yellow-dark);
@@ -1241,7 +1241,7 @@ img {
 .contacts-button::before {
   position: absolute;
   content: "";
-  width: 260px;
+  width: 100%;
   height: 8px;
   display: inline-block;
   background-color: var(--special-yellow-dark);
@@ -1662,7 +1662,7 @@ img {
   position: absolute;
   top: 15px;
   left: 26px;
-  width: 2.5px;
+  width: 3px;
   height: 25px;
   background-color: var(--basic-white);
 }
