@@ -1508,6 +1508,7 @@ img {
 }
 
 /*MODAL*/
+/*Write*/
 .modal {
   position: fixed;
   top: 0;
@@ -1641,7 +1642,7 @@ img {
   height: 55px;
   width: 55px;
   right: 20px;
-  top: 20px;
+  top: 23px;
   border: none;
   background-color: var(--special-yellow-transparent);
   border-radius: 50%;
@@ -1673,6 +1674,14 @@ img {
 
 .modal-close::after {
   transform: rotate(-45deg);
+}
+
+/*Map*/
+.modal-map {
+  display: none;
+  width: 960px;
+  height: 560px;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
 }
 
 /*CATALOG.HTML*/
