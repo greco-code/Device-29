@@ -24,11 +24,15 @@
       </a>
     </div>
     <div class="header-account-nav">
-      <form class="header-account-nav-item header-search">
-        <label>
-          <input class="header-search-input" type="search" placeholder="Поиск по сайту" name="search">
-        </label>
-      </form>
+      <div class="header-account-nav-item header-search">
+        <form class="header-form" method="get" action="https://echo.htmlacademy.ru">
+          <input class="header-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="header-search-button" type="submit">Найти</button>
+          <label class="header-search-label" for="search">
+            <span class="visually-hidden">Поиск:</span>
+          </label>
+        </form>
+      </div>
       <a class="header-account-nav-item user" href="blank.html">Валентин Петухов</a>
       <a class="header-account-nav-item logout" href="blank.html">Выйти</a>
       <a class="header-account-nav-item compare" href="blank.html">Сравнить</a>
