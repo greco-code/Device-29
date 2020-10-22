@@ -891,20 +891,22 @@ img {
 .features-list {
   position: relative;
   display: flex;
+  vertical-align: middle;
   flex-direction: column;
   align-content: center;
   width: 160px;
-  margin: 88px 0;
+  margin: 80px 0;
   grid-row-start: 1;
   grid-row-end: -1;
 }
 
 .features-list-item {
-  margin-bottom: 39px;
+  margin-bottom: 21px;
 }
 
 .features-list-item-link {
   position: relative;
+  display: inline-block;
 }
 
 .features-list-item-delivery .features-list-item-link {
