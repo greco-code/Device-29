@@ -808,7 +808,7 @@ img {
 .features {
   background-color: var(--basic-grey-light);
   margin-top: 184px;
-  min-height: 288px;
+  height: 288px;
 }
 
 .features-container {
