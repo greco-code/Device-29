@@ -815,9 +815,8 @@ img {
   position: relative;
   display: grid;
   grid-template-columns: 2fr 4fr;
-  grid-template-rows: repeat(2, min-content);
   grid-column-gap: 20px;
-  transform: translateY(-80px);
+  transform: translateY(-100px);
 }
 
 .delivery-content {
@@ -845,7 +844,7 @@ img {
   background-image: url("../img/delivery_man.svg");
   background-repeat: no-repeat;
   right: 2px;
-  top: 51px;
+  top: 71px;
 }
 
 .guaranty-content::after {
@@ -857,7 +856,7 @@ img {
   background-image: url("../img/guaranty_1.svg");
   background-repeat: no-repeat;
   right: -16px;
-  top: 33px;
+  top: 53px;
 }
 
 .credit-content::after {
@@ -869,16 +868,15 @@ img {
   background-image: url("../img/credit_1.svg");
   background-repeat: no-repeat;
   right: 8px;
-  top: 28px;
+  top: 48px;
 }
 
 .features-container::before {
   position: absolute;
   content: "";
   left: 277px;
-  top: -21px;
   width: 7px;
-  height: 320px;
+  height: 100%;
   display: inline-block;
   background-color: var(--basic-black);
 }
@@ -886,30 +884,31 @@ img {
 .features-list {
   position: relative;
   display: flex;
-  width: 160px;
   flex-direction: column;
-  margin-top: 59px;
+  align-content: center;
+  width: 160px;
+  margin: 88px 0;
   grid-row-start: 1;
   grid-row-end: -1;
 }
 
 .features-list-item {
-  margin-bottom: 22px;
+  margin-bottom: 39px;
 }
 
 .features-list-item-link {
   position: relative;
 }
 
-.features-list-item-delivery a {
+.features-list-item-delivery .features-list-item-link {
   padding: 9px 19px;
 }
 
-.features-list-item-guaranty a {
+.features-list-item-guaranty .features-list-item-link {
   padding: 9px 24px;
 }
 
-.features-list-item-credit a {
+.features-list-item-credit .features-list-item-link {
   padding: 9px 38px;
 }
 
@@ -921,33 +920,23 @@ img {
   display: inline-block;
   background-color: var(--special-yellow-dark);
   z-index: -1;
-  top: 7px;
-}
-
-.features-list-item-delivery:not(.features-list-current) .features-list-item-link::before {
-  left: -16px;
-}
-
-.features-list-item-guaranty:not(.features-list-current) .features-list-item-link::before {
-  left: -24px;
-}
-
-.features-list-item-credit:not(.features-list-current) .features-list-item-link::before {
-  left: -38px;
+  top: 16px;
+  left: 0;
 }
 
 .features-list-item:not(.features-list-current):hover .features-list-item-link::before {
   position: absolute;
   content: "";
-  width: 160px;
+  width: 100%;
   height: 40px;
   display: inline-block;
   background-color: var(--special-yellow-dark);
   z-index: -1;
-  top: -8px;
+  top: 0;
+  left: 0;
 }
 
-.features-list-item-delivery:not(.features-list-current):active .features-list-item-link::before {
+.features-list-item:not(.features-list-current):active .features-list-item-link::before {
   position: absolute;
   content: "";
   width: 280px;
@@ -955,32 +944,8 @@ img {
   display: inline-block;
   background-color: var(--basic-black);
   z-index: -1;
-  top: -8px;
-  left: -20px;
-}
-
-.features-list-item-guaranty:not(.features-list-current):active .features-list-item-link::before {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 40px;
-  display: inline-block;
-  background-color: var(--basic-black);
-  z-index: -1;
-  top: -9px;
-  left: -24px;
-}
-
-.features-list-item-credit:not(.features-list-current):active .features-list-item-link::before {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 40px;
-  display: inline-block;
-  background-color: var(--basic-black);
-  z-index: -1;
-  top: -8px;
-  left: -38px;
+  top: 0;
+  left: 0;
 }
 
 .features-list-item:not(.features-list-current):active .features-list-item-link,
@@ -989,7 +954,7 @@ img {
 }
 
 
-.features-list-item-delivery.features-list-current .features-list-item-link::before {
+.features-list-item.features-list-current .features-list-item-link::before {
   position: absolute;
   content: "";
   width: 280px;
@@ -997,34 +962,9 @@ img {
   display: inline-block;
   background-color: var(--basic-black);
   z-index: -1;
-  top: -8px;
-  left: -20px;
+  top: 0;
+  left: 0;
 }
-
-.features-list-item-guaranty.features-list-current .features-list-item-link::before {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 40px;
-  display: inline-block;
-  background-color: var(--basic-black);
-  z-index: -1;
-  top: -9px;
-  left: -24px;
-}
-
-.features-list-item-credit.features-list-current .features-list-item-link::before {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 40px;
-  display: inline-block;
-  background-color: var(--basic-black);
-  z-index: -1;
-  top: -9px;
-  left: -38px;
-}
-
 
 .features-list-item:last-child {
   margin-bottom: 0;
@@ -1051,7 +991,7 @@ img {
   line-height: 58px;
   letter-spacing: 0.2em;
   margin-bottom: 40px;
-  margin-top: 51px;
+  margin-top: 71px;
 }
 
 .features-list-description {
