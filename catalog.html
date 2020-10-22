@@ -77,7 +77,49 @@
     </ul>
     <section class="filters-section">
       <h2 class="filters-header">Фильтр:</h2>
-        <form class="filters" action=""></form>
+      <form class="filters" action="">
+        <fieldset>
+          <!--            Диапазон-->
+        </fieldset>
+        <fieldset class="color-forms">
+          <legend>Цвет</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="black" id="color-black">
+              <label for="color-black">Чёрный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="white" id="color-white">
+              <label for="color-white">Белый</label>
+            </li>
+            <li>
+              <input type="checkbox" name="blue" id="color-blue">
+              <label for="color-blue">Синий</label>
+            </li>
+            <li>
+              <input type="checkbox" name="red" id="color-red">
+              <label for="color-red">Красный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="pink" id="color-pink">
+              <label for="color-pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li>
+              <input type="radio" name="product-group" id="filter-bluetooth" value="yes">
+              <label for="filter-bluetooth">Есть</label>
+            </li>
+            <li>
+              <input type="radio" name="product-group" id="filter-nobluetooth" value="no">
+              <label for="filter-nobluetooth">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
     </section>
     <section class="sort-section">
       <h2 class="sort-heading">Сортировка:</h2>
@@ -87,7 +129,8 @@
         <li class="sort-list-item"><a class="sort-list-link" href="#"></a>По популярности</li>
       </ul>
       <ul class="sort-arrows">
-        <li class="sort-list-item-arrow"><a class="sort-list-link-arrow sort-list-link-arrow-up arrow-current" href="#"></a></li>
+        <li class="sort-list-item-arrow"><a class="sort-list-link-arrow sort-list-link-arrow-up arrow-current"
+                                            href="#"></a></li>
         <li class="sort-list-item-arrow"><a class="sort-list-link-arrow sort-list-link-arrow-down" href="#"></a></li>
       </ul>
 
