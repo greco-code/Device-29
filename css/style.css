@@ -1745,8 +1745,11 @@ img {
   z-index: -2;
 }
 
-.filters fieldset {
+.filter-item {
+  position: relative;
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filters legend {
@@ -1884,6 +1887,60 @@ img {
   width: 50vw;
   background-color: var(--basic-grey-light);
   z-index: -1;
+}
+
+.range-filter {
+  width: 200px;
+}
+
+.range-controls {
+  position: relative;
+  height: 44px;
+  margin-top: 50px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: var(--basic-black-active);
+}
+
+.range-controls .bar {
+  background-color: var(--special-green);
+  width: 70%;
+  height: 2px;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 0;
+}
+
+.range-controls .toggle-max {
+  left: 130px;
+}
+
+.filter-item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 200px;
+  top: 0;
+  left: 0;
+  background-color: var(--basic-black);
 }
 
 
