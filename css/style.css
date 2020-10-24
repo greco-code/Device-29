@@ -1993,10 +1993,10 @@ img {
 .sort-section::after {
   content: "";
   position: absolute;
-  left: 328px;
+  left: 252px;
   top: 0;
   height: 100%;
-  width: 100vw;
+  width: 50vw;
   background-color: var(--basic-grey-light);
   z-index: -1;
 }
