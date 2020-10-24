@@ -2265,6 +2265,7 @@ img {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   margin: auto 25px;
 }
 
