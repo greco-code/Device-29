@@ -78,8 +78,8 @@
     <section class="filters-section">
       <h2 class="filters-header">Фильтр:</h2>
       <form class="filters" action="https://echo.htmlacademy.ru">
-        <fieldset class="filter-item">
-          <legend>Стоимость</legend>
+        <fieldset class="filter-item filter-price">
+          <legend class="filter-heading price-heading">Стоимость</legend>
           <div class="range-filter">
             <div class="range-controls">
               <div class="scale">
@@ -93,13 +93,13 @@
                 от <output type="number" name="min-price">0</output>
               </label>
               <label class="max-price">
-                до <output type="number" name="max-price">1500</output>
+                до <output type="number" name="max-price">5000</output>
               </label>
             </div>
           </div>
         </fieldset>
         <fieldset class="filter-item color-forms">
-          <legend>Цвет</legend>
+          <legend class="filter-heading color-heading">Цвет</legend>
           <ul class="filters-color-list">
             <li class="filters-color-list-item">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black"
@@ -129,20 +129,21 @@
           </ul>
         </fieldset>
         <fieldset class="filter-item">
-          <legend>Bluetooth</legend>
+          <legend class="filter-heading bluetooth-heading">Bluetooth</legend>
           <ul class="filters-bluetooth-list">
             <li class="filters-bluetooth-list-item">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth"
                      id="filter-bluetooth" value="yes">
               <label class="filters-bluetooth-list-item-label filter-label" for="filter-bluetooth">Есть</label>
             </li>
             <li class="filters-bluetooth-list-item">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth"
                      id="filter-nobluetooth" value="no">
               <label class="filters-bluetooth-list-item-label filter-label" for="filter-nobluetooth">Нет</label>
             </li>
           </ul>
         </fieldset>
+        <button class="button filter-submit" type="submit">Показать</button>
       </form>
     </section>
     <section class="sort-section">
