@@ -247,7 +247,9 @@ img {
   display: block;
 }
 
-
+.header-search-button:focus {
+  display: inline;
+}
 
 
 .header-search-input:hover {
@@ -1747,12 +1749,23 @@ img {
   z-index: -2;
 }
 
+.filter-container-price {
+  margin-top: 85px;
+}
+
+.filter-container-color {
+  margin-top: 53px;
+}
+
+.filter-container-bluetooth {
+  margin-top: 36px;
+}
+
 .filter-item {
   position: relative;
-  border: none;
   margin: 0;
-  padding-right: 0;
-  padding-left: 59px;
+  padding: 0 0 0 59px;
+  border: none;
 }
 
 .filters legend {
@@ -1879,20 +1892,20 @@ img {
 }
 
 .filter-price  {
-  margin-top: 86px;
-  margin-bottom: 42px;
+  /*margin-top: 86px;*/
+  /*margin-bottom: 42px;*/
 }
 
 .price-heading {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .color-heading {
-  margin-bottom: 27px;
+  margin-bottom: 32px;
 }
 
 .bluetooth-heading {
-  margin-bottom: 26px;
+  margin-bottom: 30px;
 }
 
 .range-filter {
@@ -1941,13 +1954,17 @@ img {
   margin-left: 66px;
 }
 
-.filter-item::before {
+.filter-container {
+  position: relative;
+}
+
+.filter-container::before {
   content: "";
   position: absolute;
   display: block;
   height: 2px;
   width: 200px;
-  top: -59px;
+  top: -16px;
   left: 60px;
   background-color: var(--basic-black);
 }
@@ -1962,7 +1979,7 @@ img {
   border: none;
   padding: 10px 38px;
   z-index: 1;
-  margin-top: 14px;
+  margin-top: 23px;
   margin-left: 64px;
 }
 
