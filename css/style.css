@@ -422,7 +422,8 @@ img {
 }
 
 .header-site-nav-catalog-link:hover + .header-products-categories,
-.header-products-categories:hover {
+.header-products-categories:hover,
+.header-site-nav-item:focus-within .header-products-categories {
   display: grid;
 }
 
