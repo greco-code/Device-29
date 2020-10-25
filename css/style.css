@@ -57,6 +57,7 @@
   --creme: #ababab;
   --shadow: rgba(0, 0, 0, 0.18);
   --shadow-light: rgba(0, 0, 0, 0.15);
+  --outline: rgba(60, 46, 255, 1);
 }
 
 /*Global*/
@@ -1813,8 +1814,9 @@ img {
   border-radius: 2px;
 }
 
-.filter-color-list-item:focus-within {
-  border: 1px solid red;
+.filter-input:focus + .filter-label::before {
+  outline: 1px solid var(--outline);
+  outline-offset: 5px;
 }
 
 
