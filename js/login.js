@@ -23,7 +23,10 @@ contactLink.addEventListener("click", function (evt) {
     writePopup.value = storage;
     writeEmail.focus();
   } else {
-    writeName.focus();
+    writeLetter.focus();
+  }
+  if (storage) {
+    writePopup.value = storage;
   }
 });
 
@@ -38,10 +41,10 @@ writeForm.addEventListener("submit", function (evt) {
     evt.preventDefault();
     writePopup.classList.add("modal-error");
     writePopup.offsetWidth = writePopup.offsetWidth;
-    writePopup.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("login", writeName.value);
+      localStorage.setItem("email", writeEmail.value);
     }
   }
 });
