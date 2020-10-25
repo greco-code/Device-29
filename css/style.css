@@ -1813,6 +1813,11 @@ img {
   border-radius: 2px;
 }
 
+.filter-color-list-item:focus-within {
+  border: 1px solid red;
+}
+
+
 .filter-input-checkbox:checked + .filter-label::after,
 .filter-input-checkbox:active + .filter-label:after{
   content: "";
