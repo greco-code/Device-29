@@ -1,10 +1,10 @@
 const contactLink = document.querySelector(".contacts-button");
 const writePopup = document.querySelector(".modal-write");
-const writeClose = document.querySelector(".modal-close");
-const writeName = document.querySelector(".write-name-input");
-const writeEmail = document.querySelector(".write-email-input");
-const writeLetter = document.querySelector(".write-letter-textarea");
-const writeForm = document.querySelector(".write-form");
+const writeClose = writePopup.querySelector(".modal-close");
+const writeName = writePopup.querySelector(".write-name-input");
+const writeEmail = writePopup.querySelector(".write-email-input");
+const writeLetter = writePopup.querySelector(".write-letter-textarea");
+const writeForm = writePopup.querySelector(".write-form");
 
 let isStorageSupport = true;
 let storage = "";
