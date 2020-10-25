@@ -1108,7 +1108,7 @@ img {
   margin-bottom: 15px;
   margin-top: 0;
   padding-left: 16px;
-  list-style-image: url("../img/list-style-image.svg");
+  list-style-image: url("../img/list_style_image.svg");
 }
 
 .delivery-list-item:last-child {
