@@ -134,7 +134,7 @@ img {
   content: "";
   width: 100%;
   height: 8px;
-  display: inline-block;
+
   background-color: var(--special-yellow-dark);
   z-index: -1;
 }
@@ -144,7 +144,7 @@ img {
   content: "";
   width: 100%;
   height: 40px;
-  display: inline-block;
+
   background-color: var(--special-yellow-dark);
   z-index: -1;
 }
@@ -307,6 +307,7 @@ img {
   width: 10px;
   height: 10px;
   display: inline-block;
+  vertical-align: middle;
   background-image: url("../img/cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -318,6 +319,7 @@ img {
   width: 9px;
   height: 9px;
   display: inline-block;
+  vertical-align: middle;
   background-image: url("../img/login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -338,6 +340,7 @@ img {
   width: 8px;
   height: 8px;
   display: inline-block;
+  vertical-align: middle;
   background-image: url("../img/compare.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -400,9 +403,6 @@ img {
   margin-left: -20px;
 }
 
-.header-account-nav-item:nth-child(3) {
-
-}
 
 .header-account-nav-item:last-child {
   margin-right: -20px;
@@ -417,7 +417,7 @@ img {
   content: "";
   width: 15px;
   height: 15px;
-  display: inline-block;
+
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -599,7 +599,7 @@ img {
   content: "";
   width: 100px;
   height: 7px;
-  display: inline-block;
+
   background-color: var(--basic-white);
   top: 34px;
 }
@@ -771,6 +771,7 @@ img {
 .products-categories_heading {
   padding-top: 33px;
   display: inline-block;
+  vertical-align: bottom;
 }
 
 .fitness_heading {
@@ -858,7 +859,6 @@ img {
   content: "";
   width: 136px;
   height: 164px;
-  display: inline-block;
   background-image: url("../img/delivery_man.svg");
   background-repeat: no-repeat;
   right: 2px;
@@ -870,7 +870,6 @@ img {
   content: "";
   width: 171px;
   height: 195px;
-  display: inline-block;
   background-image: url("../img/guaranty_1.svg");
   background-repeat: no-repeat;
   right: -16px;
@@ -882,7 +881,6 @@ img {
   content: "";
   width: 156px;
   height: 188px;
-  display: inline-block;
   background-image: url("../img/credit_1.svg");
   background-repeat: no-repeat;
   right: 8px;
@@ -895,7 +893,6 @@ img {
   left: 277px;
   width: 7px;
   height: 100%;
-  display: inline-block;
   background-color: var(--basic-black);
 }
 
@@ -918,7 +915,7 @@ img {
 .features-list-item-link {
   position: relative;
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 .features-list-item-delivery .features-list-item-link {
@@ -938,7 +935,6 @@ img {
   content: "";
   width: 100%;
   height: 8px;
-  display: inline-block;
   background-color: var(--special-yellow-dark);
   z-index: -1;
   top: 16px;
@@ -950,7 +946,6 @@ img {
   content: "";
   width: 100%;
   height: 40px;
-  display: inline-block;
   background-color: var(--special-yellow-dark);
   z-index: -1;
   top: 0;
@@ -962,7 +957,6 @@ img {
   content: "";
   width: 280px;
   height: 40px;
-  display: inline-block;
   background-color: var(--basic-black);
   z-index: -1;
   top: 0;
@@ -980,7 +974,6 @@ img {
   content: "";
   width: 280px;
   height: 40px;
-  display: inline-block;
   background-color: var(--basic-black);
   z-index: -1;
   top: 0;
@@ -1075,7 +1068,6 @@ img {
   left: 0;
   width: 80px;
   height: 7px;
-  display: inline-block;
   background-color: var(--basic-black);
 }
 
@@ -1159,7 +1151,6 @@ img {
   left: 0;
   width: 80px;
   height: 7px;
-  display: inline-block;
   background-color: var(--basic-black);
 }
 
@@ -1220,7 +1211,6 @@ img {
   content: "";
   width: 80px;
   height: 7px;
-  display: inline-block;
   background-color: var(--gold);
   bottom: 38px;
 }
@@ -1266,6 +1256,7 @@ img {
   width: 9px;
   height: 9px;
   display: inline-block;
+  vertical-align: middle;
   background-image: url("../img/login_gold.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1277,6 +1268,7 @@ img {
   width: 8px;
   height: 8px;
   display: inline-block;
+  vertical-align: middle;
   background-image: url("../img/compare_gold.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1288,6 +1280,7 @@ img {
   width: 10px;
   height: 10px;
   display: inline-block;
+  vertical-align: middle;
   background-image: url("../img/cart_gold.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1299,6 +1292,7 @@ img {
   width: 9px;
   height: 9px;
   display: inline-block;
+  vertical-align: middle;
   background-image: url("../img/login_gold.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1632,6 +1626,7 @@ img {
   width: 9px;
   height: 9px;
   display: inline-block;
+  vertical-align: middle;
   background-image: url("../img/login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1693,7 +1688,6 @@ img {
   content: "";
   width: 12px;
   height: 12px;
-  display: inline-block;
   background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -2087,6 +2081,7 @@ img {
 
 .sort-list-link-arrow {
   display: inline-block;
+  vertical-align: middle;
   padding: 5px;
 }
 
@@ -2251,7 +2246,6 @@ img {
   content: "";
   width: 200px;
   height: 8px;
-  display: inline-block;
   background-color: var(--special-yellow-dark);
   top: 17px;
   left: 1px;
